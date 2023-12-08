@@ -1,12 +1,15 @@
 import Footer from "./Footer";
 import Jonathan from "./Jonathan";
+import Proyectos from "./Proyectos";
 
 
 const Home = () => {
   return (
     <div>
-        <h1>Este Es El Espacio Del Home</h1>
         <Jonathan/>
+        <br />
+        <Proyectos/>
+        <br />
         <Footer/>
     </div>
   )

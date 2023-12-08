@@ -18,7 +18,8 @@ import Bootstrap from '../assets/Imagenes y gifs/bootstrap.png'
 import HTML from '../assets/Imagenes y gifs/html5.png'
 import CSS from '../assets/Imagenes y gifs/css3-alt.png'
 import React from '../assets/Imagenes y gifs/react.png'
-
+//Navlink
+import { NavLink } from "react-router-dom";
 
 
 const Jonathan = () => {
@@ -43,16 +44,41 @@ const Jonathan = () => {
               Desarrollador Fullstack JR con pasión por la creación de aplicaciones web de alto rendimiento.
               <br/>
               <h3 className="text-justify display-4 fs-1" >Front: </h3>
-              <img src={HTML} alt="html" height="50px"/>
-              <img src={CSS} alt="css" height="50px"/>
-              <img src={React} alt="react" height="50px"/>
-              <img src={JS} alt="javascript" height="50px" />
-              <img src={Bootstrap} alt="bootstrap" height="50px"/>
+
+              <NavLink to='https://developer.mozilla.org/es/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals' >
+                <img src={HTML} alt="html" height="50px"/>
+              </NavLink>
+
+              <NavLink to='https://developer.mozilla.org/es/docs/Web/CSS'>
+                <img src={CSS} alt="css" height="50px"/>
+              </NavLink>
+
+              <NavLink to='https://es.react.dev/' >
+                <img src={React} alt="react" height="50px"/>
+              </NavLink>
+
+              <NavLink to='https://developer.mozilla.org/es/docs/Web/JavaScript'>
+                <img src={JS} alt="javascript" height="50px" />
+              </NavLink>
+
+              <NavLink to='https://getbootstrap.com/'>
+                <img src={Bootstrap} alt="bootstrap" height="50px"/>
+              </NavLink>
+
               <br />
+
               <h3 className="text-justify display-4 fs-1">Back: </h3>
-              <img src={VisualSC} alt="visual" height="50px"/>
-              <img src={Python} alt="python" height="50px"/>
-              <img src={Postgres} alt="postgres" height="50px"/>
+              <NavLink to='https://code.visualstudio.com/' >
+                <img src={VisualSC} alt="visual" height="50px"/>
+              </NavLink>
+
+              <NavLink to='https://www.python.org/' >
+                <img src={Python} alt="python" height="50px"/>
+              </NavLink>
+
+              <NavLink to='https://www.postgresql.org/'>
+                <img src={Postgres} alt="postgres" height="50px"/>
+              </NavLink>
             </p>
         </div>
       </div>
